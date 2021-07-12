@@ -3,6 +3,7 @@ import {
   Container,
   Link,
   Stack,
+  Image,
   Text,
   useColorModeValue,
   VisuallyHidden,
@@ -20,13 +21,18 @@ const Footer = () => {
       <Container
         as={Stack}
         maxW={"7xl"}
-        py={3}
+        py={12}
         direction={{ base: "column", md: "row" }}
         spacing={4}
         justify={{ base: "center", md: "space-between" }}
         align={{ base: "center", md: "center" }}
       >
-        <AvatarProfile />
+        <Image
+          boxSize="80px"
+          objectFit="cover"
+          src="https://shibaswap.com/static/media/shibaswap-icon.ee749b42.png"
+          alt="Segun Adebayo"
+        />
         <Text>© 2021 Shiba LATAM. All rights reserved</Text>
         <Stack direction={"row"} spacing={6}>
           {/* <SocialButton label={'Twitter'} href={'#'}>
