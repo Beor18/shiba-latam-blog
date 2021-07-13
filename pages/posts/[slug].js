@@ -43,8 +43,8 @@ export default function Post({ post, morePosts, preview }) {
               <PostBody content={post.body} />
             </article>
 
-            <Comments comments={post.comments} />
-            <Form _id={post._id} />
+            {/* <Comments comments={post.comments} />
+            <Form _id={post._id} /> */}
 
             <SectionSeparator />
             {morePosts.length > 0 && <MoreStories posts={morePosts} />}

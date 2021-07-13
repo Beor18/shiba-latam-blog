@@ -5,7 +5,7 @@ import BlockContent from "@sanity/block-content-to-react";
 
 const PostBody = ({ content }) => {
   return (
-    <Box pt={8}>
+    <Box pt={16} fontSize={18} fontWeight={400} fontFamily={"roboto"}>
       <BlockContent
         blocks={content}
         projectId={process.env.NEXT_PUBLIC_SANITY_PROJECT_ID}

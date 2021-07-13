@@ -4,6 +4,7 @@ import CoverImage from "./cover-image";
 import Link from "next/link";
 import { imageBuilder } from "../lib/sanity";
 
+// ESTE COMPONENTE YA NO SE UTILIZA MÁS PERO LO DEJO POR LAS DUDAS
 const PostPreview = ({ title, coverImage, date, excerpt, author, slug }) => {
   return (
     <div>

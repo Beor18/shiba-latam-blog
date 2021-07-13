@@ -1,4 +1,4 @@
-import { Heading, Box } from "@chakra-ui/react"
+import { Heading, Box, Divider } from "@chakra-ui/react"
 
 import Date from "./date";
 
@@ -11,7 +11,7 @@ const Comments = ({ comments = [] }) => {
       <ul>
         {comments?.map(({ _id, _createdAt, name, email, comment }) => (
           <li key={_id} className="">
-            <hr className="" />
+            <Divider />
             <h4 className="">
               <a href={`mailto:${email}`}>{name}</a> (
               <Date dateString={_createdAt} />)

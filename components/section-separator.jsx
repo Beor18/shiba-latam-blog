@@ -1,5 +1,7 @@
+import { Divider } from "@chakra-ui/react"
+
 const SectionSeparator = () => {
-  return <hr className="" />;
+  return <Divider pt={16} />;
 };
 
 export default SectionSeparator;

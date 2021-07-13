@@ -4,11 +4,11 @@ const AvatarProfile = ({ name, picture }) => {
   return (
     <div>
       <Avatar
-        size="lg"
+        size="md"
         src={picture}
         alt={name}
       />
-      <div className="">{name}</div>
+      {/* <div className="">{name}</div> */}
     </div>
   );
 };
