@@ -26,12 +26,14 @@ const Intro = () => {
         justify={{ base: "center", md: "space-between" }}
         align={{ base: "center", md: "center" }}
       >
-        <Image
-          boxSize="90px"
-          objectFit="cover"
-          src="https://shibaswap.com/static/media/shibaswap-icon.ee749b42.png"
-          alt="Segun Adebayo"
-        />
+        <a href="/">
+          <Image
+            boxSize="90px"
+            objectFit="cover"
+            src="https://shibaswap.com/static/media/shibaswap-icon.ee749b42.png"
+            alt="Shiba latam"
+          />
+        </a>
         <Text>SHIBA LATINOAMERICA</Text>
         <Stack direction={"row"} spacing={6}>
           {/* <SocialButton label={'Twitter'} href={'#'}>
