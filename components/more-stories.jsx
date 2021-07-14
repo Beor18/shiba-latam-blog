@@ -19,7 +19,7 @@ import { imageBuilder } from "../lib/sanity";
 const MoreStories = ({ posts }) => {
   return (
     <Box>
-      <Heading mt={6} mb={6}>
+      <Heading mt={16} mb={8}>
         Más noticias:
       </Heading>
       <SimpleGrid templateColumns="repeat(3, 1fr)" gap={6}>
@@ -75,7 +75,7 @@ const MoreStories = ({ posts }) => {
                 <Stack direction={"column"} spacing={0} fontSize={"sm"}>
                   <Text fontWeight={600}>{post.author?.name}</Text>
                   <Text color={"gray.500"}>
-                    <Date dateString={post.date} /> · 6min read
+                    <Date dateString={post.date} />
                   </Text>
                 </Stack>
               </Stack>
