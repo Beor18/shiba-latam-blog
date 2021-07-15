@@ -13,6 +13,7 @@ import {
 import Link from "next/link";
 
 import AvatarProfile from "./avatar";
+import Date from "./date";
 import { imageBuilder } from "../lib/sanity";
 
 const HeroPost = ({ title, coverImage, date, excerpt, author, slug }) => {

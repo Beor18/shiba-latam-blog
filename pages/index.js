@@ -11,7 +11,7 @@ import { CMS_NAME } from "../lib/constants";
 
 const Index = ({ allPosts, preview }) => {
   const heroPost = allPosts[0];
-  const morePosts = allPosts.slice(1);
+  const morePosts = allPosts.slice(1,4);
   return (
     <Layout preview={preview}>
       <Head>
@@ -28,7 +28,7 @@ const Index = ({ allPosts, preview }) => {
             excerpt={heroPost.excerpt}
           />
         )}
-        {morePosts.length > 0 && <MoreStories posts={morePosts} />}
+        {morePosts && <MoreStories posts={morePosts} />}
       </ContainerComponent>
     </Layout>
   );
