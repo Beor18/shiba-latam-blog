@@ -24,7 +24,7 @@ const MoreStories = ({ posts }) => {
       </Heading>
       <SimpleGrid templateColumns="repeat(3, 1fr)" gap={6}>
         {posts.map((post) => (
-          <Link as={`/posts/${post.slug}`} href="/posts/[slug]">
+          <Link as={`/posts/${post.slug}`} href="/posts/[slug]" key={post.slug}>
             <Box
               key={post.slug}
               maxW={"445px"}
