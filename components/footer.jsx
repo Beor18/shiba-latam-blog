@@ -8,9 +8,11 @@ import {
   useColorModeValue,
   VisuallyHidden,
 } from "@chakra-ui/react";
+import { FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 
 import AvatarProfile from "./avatar";
 import ContainerComponent from "./container";
+import SocialButton from "./social-button";
 
 const Footer = () => {
   return (
@@ -31,19 +33,19 @@ const Footer = () => {
           boxSize="80px"
           objectFit="cover"
           src="https://shibaswap.com/static/media/shibaswap-icon.ee749b42.png"
-          alt="Segun Adebayo"
+          alt="Shiba Latam"
         />
-        <Text>© 2021 Shiba LATAM. All rights reserved</Text>
+        <Text>© 2021 Shiba LATAM</Text>
         <Stack direction={"row"} spacing={6}>
-          {/* <SocialButton label={'Twitter'} href={'#'}>
+          <SocialButton label={"Twitter"} href={"#"}>
             <FaTwitter />
           </SocialButton>
-          <SocialButton label={'YouTube'} href={'#'}>
+          <SocialButton label={"YouTube"} href={"#"}>
             <FaYoutube />
           </SocialButton>
-          <SocialButton label={'Instagram'} href={'#'}>
+          <SocialButton label={"Instagram"} href={"#"}>
             <FaInstagram />
-          </SocialButton> */}
+          </SocialButton>
         </Stack>
       </Container>
     </Box>
